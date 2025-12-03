@@ -1,0 +1,90 @@
+.header {
+  margin-bottom: 1.5rem;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+/* Busca */
+.search {
+  width: 100%;
+  padding: 0.6rem 0.8rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  background: #020617;
+  color: #fff;
+  margin: 0.75rem 0 1rem;
+}
+
+.filterRow {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.select {
+  background: #020617;
+  border-radius: 8px;
+  border: 1px solid #1f2937;
+  padding: 0.4rem 0.7rem;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+}
+
+/* Tipos */
+.typesGrid {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.typeCard {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+/* Pokémon Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 1.75rem;
+  margin-top: 1rem;
+}
+
+.noResults {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #aaa;
+}
+.typeCard {
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  font-weight: bold;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  border: none;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: transform .15s ease, opacity .2s ease;
+}
+
+.typeCard:hover {
+  transform: scale(1.04);
+  opacity: 0.9;
+}
+
+.activeType {
+  outline: 3px solid #fff;
+  transform: scale(1.07) !important;
+}
+
